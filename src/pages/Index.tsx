@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Shield, FileText, Sparkles } from "lucide-react";
+import { ArrowRight, Shield, FileText, Bot, Settings, MessageSquare } from "lucide-react";
 import { Link } from "react-router-dom";
+import botLogo from "@/assets/bot-logo.png";
 
 const Index = () => {
   return (
@@ -10,13 +11,15 @@ const Index = () => {
       <section className="relative py-20 px-4">
         <div className="container mx-auto text-center">
           <div className="mb-8">
-            <Sparkles className="h-16 w-16 mx-auto mb-6 text-primary animate-pulse" />
+            <div className="flex justify-center mb-6">
+              <img src={botLogo} alt="Sota Bot Logo" className="h-24 w-24 drop-shadow-glow" />
+            </div>
             <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-              Bienvenido a Mi Sitio Web
+              Sota Bot
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Una plataforma moderna y elegante diseñada con las mejores prácticas de desarrollo web.
-              Explora nuestras políticas y términos de servicio.
+              Un bot de Discord totalmente customizable con herramientas avanzadas para gestionar tu servidor.
+              Configura cada aspecto desde Discord para adaptarlo a tus necesidades.
             </p>
           </div>
           
@@ -43,10 +46,10 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-foreground">
-              Características Principales
+              Características del Bot
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Diseño moderno con tema oscuro y navegación intuitiva
+              Herramientas poderosas y configuración flexible para tu servidor de Discord
             </p>
           </div>
 
@@ -54,16 +57,16 @@ const Index = () => {
             <Card className="shadow-card border-border/50 hover:shadow-glow transition-all duration-300">
               <CardHeader>
                 <div className="h-12 w-12 bg-primary/20 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="h-6 w-6 text-primary" />
+                  <Bot className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl">Seguridad Garantizada</CardTitle>
+                <CardTitle className="text-xl">Herramientas Avanzadas</CardTitle>
                 <CardDescription>
-                  Políticas de privacidad claras y términos de servicio transparentes
+                  Sistema de moderación automática y comandos personalizados
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Tu información está protegida con los más altos estándares de seguridad.
+                  Gestión completa del servidor con herramientas de moderación inteligente.
                 </p>
               </CardContent>
             </Card>
@@ -71,16 +74,16 @@ const Index = () => {
             <Card className="shadow-card border-border/50 hover:shadow-glow transition-all duration-300">
               <CardHeader>
                 <div className="h-12 w-12 bg-accent/20 rounded-lg flex items-center justify-center mb-4">
-                  <FileText className="h-6 w-6 text-accent" />
+                  <Settings className="h-6 w-6 text-accent" />
                 </div>
-                <CardTitle className="text-xl">Documentación Completa</CardTitle>
+                <CardTitle className="text-xl">Totalmente Customizable</CardTitle>
                 <CardDescription>
-                  Términos de servicio detallados y fáciles de entender
+                  Configura cada aspecto del bot directamente desde Discord
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Información clara sobre el uso de nuestros servicios y plataforma.
+                  Adapta el bot a las necesidades específicas de tu servidor.
                 </p>
               </CardContent>
             </Card>
@@ -88,16 +91,16 @@ const Index = () => {
             <Card className="shadow-card border-border/50 hover:shadow-glow transition-all duration-300">
               <CardHeader>
                 <div className="h-12 w-12 bg-secondary/20 rounded-lg flex items-center justify-center mb-4">
-                  <Sparkles className="h-6 w-6 text-primary" />
+                  <MessageSquare className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl">Diseño Moderno</CardTitle>
+                <CardTitle className="text-xl">Interacción Inteligente</CardTitle>
                 <CardDescription>
-                  Interfaz elegante con tema oscuro y navegación fluida
+                  Respuestas automáticas y sistema de tickets avanzado
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Experiencia de usuario optimizada con animaciones suaves.
+                  Herramientas de comunicación para mejorar la experiencia de usuario.
                 </p>
               </CardContent>
             </Card>
@@ -111,10 +114,10 @@ const Index = () => {
           <Card className="max-w-4xl mx-auto shadow-card border-border/50">
             <CardHeader>
               <CardTitle className="text-3xl md:text-4xl mb-4 text-foreground">
-                ¿Listo para Comenzar?
+                ¿Listo para Usar el Bot?
               </CardTitle>
               <CardDescription className="text-lg">
-                Explora nuestros términos de servicio y política de privacidad para conocer más
+                Consulta nuestros términos de servicio y política de privacidad para más información
               </CardDescription>
             </CardHeader>
             <CardContent>
