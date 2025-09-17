@@ -44,7 +44,7 @@ const Navigation = () => {
         <div className="p-6">
           <div className="mb-8">
             <h2 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              Mi Sitio Web
+              Darkline♤
             </h2>
             <p className="text-muted-foreground mt-2">
               Navegación principal

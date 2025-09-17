@@ -12,10 +12,10 @@ const Index = () => {
         <div className="container mx-auto text-center">
           <div className="mb-8">
             <div className="flex justify-center mb-6">
-              <img src={botLogo} alt="Sota Bot Logo" className="h-24 w-24 drop-shadow-glow" />
+              <img src={botLogo} alt="Darkline♤ Logo" className="h-24 w-24 drop-shadow-glow" />
             </div>
             <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-              Sota Bot
+              Darkline♤
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Un bot de Discord totalmente customizable con herramientas avanzadas para gestionar tu servidor.
