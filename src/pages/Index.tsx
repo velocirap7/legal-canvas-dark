@@ -24,11 +24,17 @@ const Index = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button asChild size="lg" className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground px-8 py-3 text-lg shadow-glow">
+              <a href="https://discord.com/oauth2/authorize?client_id=1026899679960645632&scope=bot" target="_blank" rel="noopener noreferrer">
+                <Bot className="h-5 w-5 mr-2" />
+                Añadir a Discord
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </a>
+            </Button>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg">
               <Link to="/terms">
                 <FileText className="h-5 w-5 mr-2" />
                 Ver Términos
-                <ArrowRight className="h-5 w-5 ml-2" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 px-8 py-3 text-lg">
